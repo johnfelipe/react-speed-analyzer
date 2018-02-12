@@ -2,6 +2,14 @@
   "name": "react-speed-analyzer",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "REACT_APP_BAQEND=makefast-dev node scripts/start.js",
+    "build": "REACT_APP_BAQEND=makefast-dev node scripts/build.js",
+    "start:plesk": "REACT_APP_BAQEND=makefast node scripts/start-embedded.js",
+    "build:plesk": "REACT_APP_BAQEND=makefast node scripts/build-embedded.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "flow": "flow"
+  },
   "dependencies": {
     "autoprefixer": "7.2.3",
     "babel-core": "6.26.0",
@@ -28,7 +36,10 @@
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-import": "^11.0.0",
     "postcss-loader": "2.0.9",
+    "postcss-namespace": "^1.1.1",
     "postcss-nested": "^2.1.2",
+    "postcss-nested-import": "^0.1.0",
+    "postcss-scopify": "^0.1.9",
     "promise": "8.0.1",
     "promise-polyfill": "^7.0.0",
     "prop-types": "^15.6.0",
@@ -62,12 +73,6 @@
     "webpack-dev-server": "2.9.7",
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "^2.0.3"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom",
-    "flow": "flow"
   },
   "jest": {
     "collectCoverageFrom": [

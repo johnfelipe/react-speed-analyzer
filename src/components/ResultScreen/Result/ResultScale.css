@@ -1,42 +1,46 @@
-.border-right {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-}
+#speed-kit-analyzer {
 
-.border-left {
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
+  .border-right {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
 
-.dark-green {
-  color: #377401;
-}
+  .border-left {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
 
-.green {
-  color: #8aae6c;
-}
+  .dark-green {
+    color: #377401;
+  }
 
-.orange {
-  color: #f2a541;
-}
+  .green {
+    color: #8aae6c;
+  }
 
-.red {
-  color: #f07368;
-}
+  .orange {
+    color: #f2a541;
+  }
 
-.bg-dark-green {
-  /* background-color: color(#377401 tint(15%)); */
-  background-color: #c8e4b0;
-}
+  .red {
+    color: #f07368;
+  }
 
-.bg-light-green {
-  background-color: #f0f5eb;
-}
+  .bg-dark-green {
+    /* background-color: color(#377401 tint(15%)); */
+    background-color: #c8e4b0;
+  }
 
-.bg-light-orange {
-  background-color: #fef1e9;
-}
+  .bg-light-green {
+    background-color: #f0f5eb;
+  }
 
-.bg-light-red {
-  background-color: #feecec;
+  .bg-light-orange {
+    background-color: #fef1e9;
+  }
+
+  .bg-light-red {
+    background-color: #feecec;
+  }
+
 }

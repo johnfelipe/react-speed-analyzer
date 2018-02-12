@@ -1,49 +1,51 @@
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
+#speed-kit-analyzer {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 
-.box-shadow {
-  box-shadow: 0 2px 4px rgba(0,0,0,.05);
-}
+  .box-shadow {
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+  }
 
-.hidden {
-  visibility: hidden;
-}
+  .hidden {
+    visibility: hidden;
+  }
 
-.faded {
-  opacity: 0.5;
-}
+  .faded {
+    opacity: 0.5;
+  }
 
-button, input, optgroup, select, textarea {
-  font-family: "Open Sans";
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-}
+  button, input, optgroup, select, textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
 
-.material-input {
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-  background: none;
-  color: rgba(255, 255, 255, 0.35);
-  font-weight: 300;
-  text-align: right;
-}
+  .material-input {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    background: none;
+    color: rgba(255, 255, 255, 0.35);
+    font-weight: 300;
+    text-align: right;
+  }
 
-.with-tooltip:after {
-  content: "i";
-  background: #8a8a8a85;
-  width: 18px;
-  height: 18px;
-  display: inline-block;
-  color: white;
-  font-weight: 600;
-  border-radius: 50%;
-  font-size: 14px;
-  margin-left: 4px;
-}
+  .with-tooltip:after {
+    content: "i";
+    background: #8a8a8a85;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-left: 4px;
+  }
 
-b, strong {
-  font-weight: 600;
+  b, strong {
+    font-weight: 600;
+  }
 }

@@ -38,13 +38,15 @@ function getServedPath(appPackageJson) {
   return ensureSlash(servedUrl, true);
 }
 
+console.log(process.env.REACT_APP_TYPE)
+
 // config after eject: we're in ./config/
 module.exports = {
   dotenv: resolveApp('.env'),
-  appBuild: resolveApp('build'),
+  appBuild: process.env.REACT_APP_TYPE === 'embedded' ? resolveApp('build-embedded') : resolveApp('build'),
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
-  appIndexJs: resolveApp('src/index.js'),
+  appHtml: process.env.REACT_APP_TYPE === 'embedded' ? resolveApp('public/embedded.html') : resolveApp('public/index.html'),
+  appIndexJs: process.env.REACT_APP_TYPE === 'embedded' ? resolveApp('src/embedded/index.js') : resolveApp('src/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   yarnLockFile: resolveApp('yarn.lock'),

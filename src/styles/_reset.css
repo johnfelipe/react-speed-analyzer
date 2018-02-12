@@ -1,7 +1,9 @@
-* {
-  box-sizing: border-box;
-}
+#speed-kit-analyzer {
+  * {
+    box-sizing: border-box;
+  }
 
-input {
-  outline: 0;
+  input {
+    outline: 0;
+  }
 }

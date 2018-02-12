@@ -6,48 +6,51 @@
   --item-margin: 8px;
 }
 
-.treadmill {
-  position: relative;
-  height: calc(var(--item-height) + var(--item-margin) * 2);
-  will-change: transform;
-  .first, .second {
-    display: inline-flex;
-    position: absolute;
-    animation-duration: 120s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+#speed-kit-analyzer {
+
+  .treadmill {
+    position: relative;
+    height: calc(var(--item-height) + var(--item-margin) * 2);
     will-change: transform;
-    .treadmill-item > * {
-      padding: 24px;
-      /* border-radius: 5px; */
-      background: #f8f8f8;
-      height: var(--item-height);
-      margin: 8px 8px;
-      color: #000000;
-      text-align: center;
-      width: calc(var(--item-width) / 2);
-      @media (--breakpoint-not-small) {
-        width: var(--item-width);
-      }
-      .treadmill-img {
-        max-width: 100%;
-        max-height: 65%;
-        margin-left: auto;
-        margin-right: auto;
-        /* opacity: .6; */
-        display: block;
+    .first, .second {
+      display: inline-flex;
+      position: absolute;
+      animation-duration: 120s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      will-change: transform;
+      .treadmill-item > * {
+        padding: 24px;
+        /* border-radius: 5px; */
+        background: #f8f8f8;
+        height: var(--item-height);
+        margin: 8px 8px;
+        color: #000000;
+        text-align: center;
+        width: calc(var(--item-width) / 2);
+        @media (--breakpoint-not-small) {
+          width: var(--item-width);
+        }
+        .treadmill-img {
+          max-width: 100%;
+          max-height: 65%;
+          margin-left: auto;
+          margin-right: auto;
+          /* opacity: .6; */
+          display: block;
+        }
       }
     }
-  }
-  .first {
-    animation-name: first;
-  }
-  .second {
-    animation-name: second;
-  }
-  &:hover {
-    .first, .second {
-      animation-play-state: paused;
+    .first {
+      animation-name: first;
+    }
+    .second {
+      animation-name: second;
+    }
+    &:hover {
+      .first, .second {
+        animation-play-state: paused;
+      }
     }
   }
 }

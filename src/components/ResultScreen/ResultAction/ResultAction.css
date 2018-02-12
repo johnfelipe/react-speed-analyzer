@@ -1,9 +1,13 @@
-.lightGreen {
-  color: #5cb85c;
-}
+#speed-kit-analyzer {
 
-.img-container {
-  height: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  .lightGreen {
+    color: #5cb85c;
+  }
+
+  .img-container {
+    height: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
 }

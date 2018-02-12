@@ -1,24 +1,21 @@
-@import "tachyons/src/_normalize";
 @import "tachyons/src/_flexbox";
 @import "tachyons/src/_widths";
 @import "tachyons/src/_spacing";
 @import "tachyons/src/_position";
-
-@import "slick-carousel/slick/slick.scss";
-@import "slick-carousel/slick/slick-theme.scss";
-@import "codemirror/lib/codemirror.css";
-@import "react-tippy/dist/tippy.css";
 @import 'tachyons/src/_media-queries';
 
-@import "./lib/animate.css";
-@import "./lib/toggle.css";
+@import "codemirror/lib/codemirror.css";
+@import "react-tippy/dist/tippy.css";
 
-@import "./_common";
-@import "./_variables";
-@import "./_reset.css";
-@import "./_spinner.css";
-@import "./_buttons.css";
-@import "./_modal.css";
+@import "../styles/lib/animate.css";
+@import "../styles/lib/toggle.css";
+
+@import "../styles/_common";
+@import "../styles/_variables";
+@import "../styles/_reset.css";
+@import "../styles/_spinner.css";
+@import "../styles/_buttons.css";
+@import "../styles/_modal.css";
 
 @import "tachyons/src/_text-align";
 @import "tachyons/src/_display";
@@ -31,40 +28,14 @@
   height: 100%;
 } */
 
-body {
+#speed-kit-analyzer {
   margin: 0;
   padding: 0;
   flex-grow: 1;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 1.48;
-  color: color(#fff a(80%));
-}
-
-html, body, #root {
-  min-height: 100vh;
-}
-
-html {
-  background: #12212e;
-  /* min-height: 100%; */
-  /* background-color: linear-gradient(to bottom,#162939,#12212e); */
-}
-
-#root {
-  /* background: var(--dark-blue); */
-  /* background: linear-gradient(to bottom, var(--dark-blue) 0%, #1a1a1a 100%); */
-  /* background: linear-gradient(to bottom, #000 0%, #000 66%, #1a1a1a 100%); */
-  /* background: linear-gradient(to bottom,#162939,#12212e); */
-  background-color: linear-gradient(to bottom,#162939,#12212e);
-}
-
-#root, #main {
-  display: flex;
-  flex-grow: 1;
-}
-
-#speed-kit-analyzer {
+  background: linear-gradient(to bottom,#162939,#12212e);
   #wrapper {
     width: 100%;
     display: flex;

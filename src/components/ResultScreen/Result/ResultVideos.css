@@ -2,105 +2,109 @@
   --mainFactorSize: 96px;
 }
 
-.embedVideo {
-  width: 100%;
-  border-radius: 3px 3px 3px 3px;
-  border: 1px solid #e8e8e8;
-  box-shadow: 0 2px 4px rgba(0,0,0,.05);
-}
+#speed-kit-analyzer {
 
-.speedKitVideo {
-  background: #f9f9f9;
-  background: linear-gradient(to right,#f9f9f9,#fff);
-}
-
-.mainFactor {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: var(--mainFactorSize);
-  height: var(--mainFactorSize);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: calc(-1 * var(--mainFactorSize) / 2);
-  margin-left: calc(-1 * var(--mainFactorSize) / 2);
-  background: #f0f5ec;
-  border: 6px solid #ffffff;
-  color: #558928;
-  border-radius: 50%;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-
-.video__wrapper {
-  position: relative;
-  &:not(.auto):before {
-    content: "";
-    display: block;
-    position: relative;
-    padding-top: 67.5%;
+  .embedVideo {
+    width: 100%;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
   }
-  .video__wrapper-inner {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    /* border: 1px solid #e8e8e8; */
-    box-shadow: 0 0 4px rgba(0,0,0,0.1);
-    video {
-      margin-left: -1.75%;
-      margin-top: -7.25%;
-      width: 103.8%;
-    }
+
+  .speedKitVideo {
+    background: #f9f9f9;
+    background: linear-gradient(to right,#f9f9f9,#fff);
   }
-  .video__wrapper-play {
+
+  .mainFactor {
     position: absolute;
-    font-size: 80px;
     top: 50%;
     left: 50%;
-    margin-left: -37.5px;
-    margin-top: -37.5px;
-    color: rgba(255, 255, 255, 0.95);
-    cursor: pointer;
-    width: 75px;
-    height: 75px;
+    width: var(--mainFactorSize);
+    height: var(--mainFactorSize);
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    padding-left: 10px;
-    text-shadow: 0 0px 16px rgba(0,0,0,0.1);
-    &:hover {
-      color: white;
-    }
+    align-items: center;
+    margin-top: calc(-1 * var(--mainFactorSize) / 2);
+    margin-left: calc(-1 * var(--mainFactorSize) / 2);
+    background: #f0f5ec;
+    border: 6px solid #ffffff;
+    color: #558928;
+    border-radius: 50%;
+    font-weight: 400;
+    line-height: 1.2;
   }
-  .video__wrapper-progress {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.75));
-    height: 20px;
-    .video__wrapper-progress-inner {
-      width: 100%;
-      margin: 8px;
+
+
+  .video__wrapper {
+    position: relative;
+    &:not(.auto):before {
+      content: "";
+      display: block;
+      position: relative;
+      padding-top: 67.5%;
+    }
+    .video__wrapper-inner {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       overflow: hidden;
-      background: rgba(255,255,255,.55);
-      .video__wrapper-progress-bar {
-        height: 6px;
-        /* flex-basis: 0%; */
+      /* border: 1px solid #e8e8e8; */
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      video {
+        margin-left: -1.75%;
+        margin-top: -7.25%;
+        width: 103.8%;
+      }
+    }
+    .video__wrapper-play {
+      position: absolute;
+      font-size: 80px;
+      top: 50%;
+      left: 50%;
+      margin-left: -37.5px;
+      margin-top: -37.5px;
+      color: rgba(255, 255, 255, 0.95);
+      cursor: pointer;
+      width: 75px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding-left: 10px;
+      text-shadow: 0 0px 16px rgba(0,0,0,0.1);
+      &:hover {
+        color: white;
+      }
+    }
+    .video__wrapper-progress {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      display: flex;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.75));
+      height: 20px;
+      .video__wrapper-progress-inner {
         width: 100%;
-        bottom: 0px;
-        left: 0px;
-        background: rgb(242, 115, 84);
-        transition: all 0.1s linear;
-        transform-origin: 0 0;
+        margin: 8px;
+        overflow: hidden;
+        background: rgba(255,255,255,.55);
+        .video__wrapper-progress-bar {
+          height: 6px;
+          /* flex-basis: 0%; */
+          width: 100%;
+          bottom: 0px;
+          left: 0px;
+          background: rgb(242, 115, 84);
+          transition: all 0.1s linear;
+          transform-origin: 0 0;
+        }
       }
     }
   }
+
 }

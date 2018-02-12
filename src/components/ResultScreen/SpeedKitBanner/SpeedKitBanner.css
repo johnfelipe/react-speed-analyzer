@@ -1,4 +1,8 @@
-.banner {
-  background: linear-gradient(to bottom,#162939,#12212e);
-  color: white;
+#speed-kit-analyzer {
+  
+  .banner {
+    background: linear-gradient(to bottom,#162939,#12212e);
+    color: white;
+  }
+
 }

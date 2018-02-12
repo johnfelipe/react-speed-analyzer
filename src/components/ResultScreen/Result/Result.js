@@ -151,7 +151,7 @@ class Result extends Component {
         <Collapse isOpen={this.state.showDetails}>
           <div className="mb4">
             {/*<hr />*/}
-            <hr className="mt3"/>
+            <hr className="mt3" style={{ marginTop: 24 }}/>
             <h3 className="text-center mt5">Pagespeed Insights</h3>
             {this.renderPSI()}
             <hr />

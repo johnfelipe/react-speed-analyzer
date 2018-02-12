@@ -1,5 +1,9 @@
 @import "../../styles/_variables";
 
-.contact__form {
-  color: #444;
+#speed-kit-analyzer {
+  
+  .contact__form {
+    color: #444;
+  }
+
 }

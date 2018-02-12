@@ -1,14 +1,18 @@
-footer {
-  align-self: stretch;
-  font-size: 16px;
-  .info {
-    background: color(#fff a(5%));
-    a {
-      color: white;
-      white-space: nowrap;
-      @media(max-width: 400px) {
-        font-size: 14px;
+#speed-kit-analyzer {
+
+  footer {
+    align-self: stretch;
+    font-size: 16px;
+    .info {
+      background: color(#fff a(5%));
+      a {
+        color: white;
+        white-space: nowrap;
+        @media(max-width: 400px) {
+          font-size: 14px;
+        }
       }
     }
   }
+
 }
