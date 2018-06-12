@@ -44,8 +44,8 @@ const verifyMainMetric = ({ competitorTest, speedKitTest, mainMetric, secondaryM
   const competitorData = competitorTest.firstView
   const speedKitData = speedKitTest.firstView
   if (competitorData && speedKitData) {
-    const mainMetric = 'firstMeaningfulPaint'
-    const secondaryMetric = 'speedIndex'
+    const mainMetric = 'speedIndex'
+    const secondaryMetric = 'firstMeaningfulPaint'
     return {
       mainMetric,
       secondaryMetric
